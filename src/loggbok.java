@@ -1,5 +1,4 @@
 import java.io.Serializable;
-import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -12,6 +11,7 @@ public class loggbok implements Serializable{
     private Date createdAt;
     private Date updatedAt;
     private String message;
+
     // Optional ArrayList<LogEntry> history;
 
     public loggbok(String message) {
@@ -34,8 +34,9 @@ public class loggbok implements Serializable{
 
     @Override
     public String toString() {
-        return "loggbok{" + "createdAt=" + createdAt
-                + ", updatedAt=" + updatedAt + ", message='" + message + '\'' + '}';
+
+        model myObj = new model();
+        return createdAt+" - " + myObj.message;
     }
 
     // Optional: add old version to history

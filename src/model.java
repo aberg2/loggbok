@@ -5,6 +5,6 @@ import javax.swing.*;
  * view
  * Skriven av coolingen
  */
-public class view {
+public class model {
     String message = JOptionPane.showInputDialog("Inlägg");
 }
