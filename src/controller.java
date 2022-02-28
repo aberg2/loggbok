@@ -5,10 +5,6 @@
  */
 public class controller {
     public static void main(String[] args) {
-
-        model myObj = new model();
-        String inlagg = myObj.message;
-
         fenst F = new fenst();
     }
 }
